@@ -61,6 +61,8 @@ $(document).ready(function(){
 	//Use jQuery to assign a callback function when the 'search' button is clicked
 	$("#search").click(function(){
 		console.log("Clicked search");
+		//Clear out any old searches
+		$('#resultsTarget').html('');
 		//Use jQuery to get the value of the 'query' input box
 		var newSearchTerm = $("#query").val();
 		console.log(newSearchTerm);
